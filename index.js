@@ -11,16 +11,10 @@ app.get('/calc/:val',(req,res)=>{
     const splitPlus = value.split("+")
     let numPlus = 0
     splitPlus.forEach((num)=>{
-        numPlus+= Number(num)
+        numPlus+=Number(num)
     })
 
-    const splitMinus = value.split("-")
-    let numMinus = 0
-    splitMinus.forEach(()=>{
-        
-    })
-
-    const final = numPlus
+    const final = numPlus+numMinus
     console.log(final)
 })
 
