@@ -14,7 +14,7 @@ app.get('/calc/:val',(req,res)=>{
         numPlus+=Number(num)
     })
 
-    const final = numPlus+numMinus
+    const final = numPlus
     console.log(final)
 })
 
